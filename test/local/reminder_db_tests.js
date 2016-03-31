@@ -76,7 +76,7 @@ test(
             }
           })
 
-          t.ok(reminderFound)
+          t.ok(reminderFound, 'fetched the created reminder')
           t.end()
         }
       )
