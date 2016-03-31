@@ -59,6 +59,7 @@ test(
           return db.fetchReminders({
             // fetch reminders older than 'reminderTime'
             reminderTime: 1,
+            reminderTimeOutdated: 5000,
             type: 'first',
             limit: 200
           }).catch(function (err) {

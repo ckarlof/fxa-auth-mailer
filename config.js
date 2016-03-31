@@ -77,7 +77,12 @@ var conf = convict({
       default: '168 hours',
       format: 'duration'
     },
-    reminderTimeOutdated: {
+    reminderTimeFirstOutdated: {
+      doc: 'Milliseconds since account creation after which the reminder should not be sent',
+      default: '167 hours',
+      format: 'duration'
+    },
+    reminderTimeSecondOutdated: {
       doc: 'Milliseconds since account creation after which the reminder should not be sent',
       default: '300 hours',
       format: 'duration'
